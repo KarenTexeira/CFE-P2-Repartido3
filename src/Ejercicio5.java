@@ -1,4 +1,3 @@
-
 public class Ejercicio5 {
     public static void main(String[] args){
 
@@ -8,10 +7,9 @@ public class Ejercicio5 {
                 {9,10,11,12},
                 {13,14,15,16}
         };
-        int primerElemento=matriz[0][0];
-        int elementoSegundo=matriz [1][1];
-        int elementoTercero=matriz [2][2];
-        int ultimoElemento= matriz[matriz.length - 1][matriz[0].length-1];
-        System.out.println("Diagonal principal: " + primerElemento + " " + elementoSegundo + " " + elementoTercero + "  " + ultimoElemento);
+        System.out.println("Diagonal principal: ");
+        for(int i=0; i<matriz.length; i++){
+            System.out.print(matriz[i][i] + " ");
+        }
     }
 }
